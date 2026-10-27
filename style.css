@@ -1,81 +1,79 @@
 /* =========================
    ОБЩИЕ НАСТРОЙКИ
    ========================= */
-
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     color: #222;
 }
-
 /* =========================
    ШАПКА
    ========================= */
-
 #header {
     width: 100%;
     background-color: #2f5597;
     color: white;
+    padding: 0;
 }
-
 .header-in {
-    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
-    padding: 15px 20px;
-
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
 }
-
 /* Логотип */
-
 .logo {
     width: 100px;
     height: 100px;
     object-fit: cover;
+    border-radius: 50%;
 }
-
 /* Название сайта */
-
 .namesite {
     font-size: 28px;
     font-weight: bold;
 }
-
+/* Логотип и название */
+.logo-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+}
 /* =========================
    МЕНЮ
    ========================= */
-
 .menu {
-    order: 2;
-    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
 }
-
 .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
-
     display: flex;
-    gap: 20px;
 }
-
 .menu a {
+    display: block;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
-
+.menu a:first-child {
+    border-left: none;
+}
 .menu a:hover {
     text-decoration: underline;
 }
-
 /* =========================
    ОСНОВНОЙ КОНТЕНТ
    ========================= */
