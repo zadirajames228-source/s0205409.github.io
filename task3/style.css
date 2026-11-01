@@ -31,8 +31,9 @@ body {
 /* Логотип */
 .logo {
     order: 1;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -236,17 +237,12 @@ body{
     #links { order: 1; }
     #table { order: 2; }
     #form  { order: 3; }
+   .logo{
+      width: 100px;
+      height: 100px;
+   }
 }
 img {
     max-width: 100%;
     height: auto;
-}
-.logo {
-    height: 70px;
-}
-
-@media (min-width: 768px) {
-    .logo {
-        height: 100px;
-    }
 }
