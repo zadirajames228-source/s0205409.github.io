@@ -20,23 +20,23 @@ body {
     padding: 0;
 }
 .header-in {
-    width: 100%;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 0;
+    align-items: center;
+    gap: 15px;
+    max-width: 960px;
+   margin: 0 auto;
+   padding: 10 px 0;
 }
 /* Логотип */
 .logo {
-    width: 100px;
-    height: 100px;
+    order: 1;
     object-fit: cover;
     border-radius: 50%;
 }
 /* Название сайта */
 .namesite {
-    font-size: 28px;
+    order: 2;
+    font-size: 24px;
     font-weight: bold;
 }
 /* Логотип и название */
@@ -50,13 +50,14 @@ body {
    МЕНЮ
    ========================= */
 .menu {
-    display: flex;
-    align-items: flex-start;
+    order:3;
+    margin-left: auto;
 }
 .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 25 px;
     display: flex;
 }
 .menu a {
