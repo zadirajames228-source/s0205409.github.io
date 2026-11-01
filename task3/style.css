@@ -100,7 +100,14 @@ body {
    ========================= */
 
 .table-wrap {
+    width: 100%;
     overflow-x: auto;
+}
+.table-wrap table {
+   width: 100%;
+}
+body{
+   overflow-x: hidden;
 }
 
 .table {
