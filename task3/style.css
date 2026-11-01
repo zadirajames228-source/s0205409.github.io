@@ -237,3 +237,16 @@ body{
     #table { order: 2; }
     #form  { order: 3; }
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.logo {
+    height: 70px;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        height: 100px;
+    }
+}
