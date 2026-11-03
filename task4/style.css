@@ -1,1 +1,172 @@
+/* =========================
+   ОБЩИЕ НАСТРОЙКИ
+   Сетку и отступы (margin/padding) даёт Bootstrap через классы в HTML:
+   container, row, col-*, g-3, p-3, py-*, px-*, nav-link и др.
+   Здесь остались только цвета, шрифты, порядок шапки и размеры.
+   ========================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   ШАПКА (Mobile First)
+   ========================= */
+#header {
+    width: 100%;
+    background-color: #2f5597;
+    color: white;
+}
+
+.header-in {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 15px;
+    width: 100%;
+}
+
+/* Логотип */
+.logo {
+    order: 1;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Название сайта */
+.namesite {
+    order: 2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* =========================
+   МЕНЮ
+   На телефоне: под логотипом, вертикальный список (flex-column из Bootstrap)
+   ========================= */
+.menu {
+    order: 3;
+    width: 100%;
+}
+
+.menu .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   ОСНОВНОЙ КОНТЕНТ
+   ========================= */
+#content {
+    max-width: 960px;
+}
+
+.block {
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* =========================
+   ТАБЛИЦА
+   ========================= */
+.table {
+    width: 100%;
+}
+
+/* Все ячейки */
+.table th,
+.table td {
+    border: 1px solid #777;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Главный заголовок таблицы */
+.table th.table-head {
+    background-color: #2f5597;
+    color: white;
+    font-size: 20px;
+}
+
+/* Заголовки столбцов */
+.table-cols th {
+    background-color: #d9eaf7;
+    font-weight: bold;
+}
+
+/* Нечётные строки */
+.table tbody tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+/* Чётные строки */
+.table tbody tr:nth-child(even) td {
+    background-color: #eaf2f8;
+}
+
+/* Нижняя строка таблицы */
+.table td.table-total {
+    background-color: #2f5597;
+    color: white;
+    font-weight: bold;
+}
+
+/* =========================
+   ФОРМА
+   ========================= */
+#form input[type='text'],
+#form input[type='tel'],
+#form input[type='email'],
+#form input[type='date'],
+#form select,
+#form textarea {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+#form input[type='submit'] {
+    background-color: #2f5597;
+    border-color: #2f5597;
+}
+
+/* =========================
+   ПОДВАЛ
+   ========================= */
+#main-footer {
+    width: 100%;
+    background-color: #2f5597;
+    color: white;
+}
+
+.footer-content {
+    max-width: 960px;
+    text-align: center;
+}
+
+/* =========================
+   ПЛАНШЕТЫ И ПК (от 768px)
+   ========================= */
+@media (min-width: 768px) {
+    .header-in {
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu {
+        width: auto;
+        margin-left: auto;
+    }
+}
